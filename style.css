@@ -1,0 +1,486 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* RESETEO */
+
+
+/* inicio de estilos para header */
+
+.header-container {
+    color: hsl(54, 100%, 51%);
+    background-color: hsl(0, 0%, 0%);
+    padding: 60px 50px;
+    font-size: large;
+    font-style: italic;
+    /* alinear horizontalmente */
+    /* justify-content: center; */
+    /* todo lo de arriba no aplicado debido a la falta de flex en esta entrega. */
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.headertitle {
+    margin: 10px;
+    float: left;
+}
+
+.headertext {
+    float: right;
+    padding: 5px;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/* fin estilos header */
+
+
+/* inicio estilos body */
+
+body {
+    background-color: hsl(239, 100%, 11%);
+    font-family: "raleway", sans-serif;
+}
+
+.img-carro img {
+    aspect-ratio: 16/9;
+    height: 550px;
+}
+
+
+/* SECCION MATCHS ( GRID Y FLEBOX DESAFIO 3) */
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    /* Grid */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.titulo {
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+.contenedor-matchs {
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card .textos {
+    height: 100%;
+    /* Flebox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.match1 {
+    background-image: url(./img/matchs/ALEMANIA.jpg);
+}
+
+.match2 {
+    background-image: url(./img/carrousel/argentina.png);
+}
+
+.match3 {
+    background-image: url(./img/matchs/ESPAÑA.jpg);
+}
+
+.match4 {
+    background-image: url(./img/matchs/FRANCIA.jpg);
+}
+
+.match5 {
+    background-image: url(./img/matchs/ITALIA.jpg);
+}
+
+.match6 {
+    background-image: url(./img/matchs/INGLATERRA.png);
+}
+
+.banner {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+    /* Flexbox */
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(./img/matchs/Banner.jpg);
+}
+
+.banner ul {
+    list-style: none;
+}
+
+.banner ul li {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.banner .boton {
+    background: #FFD600;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+
+/* ANIMACION */
+
+.boton {
+    transition: 2s;
+}
+
+.boton:hover {
+    transform: scale(1, 2);
+}
+
+
+/* ANIMACION */
+
+
+/* FIN MATCHS ( DESAFIO 3  )*/
+
+
+/* fin estilos body */
+
+
+/* inicio de estilos footer */
+
+.footer-container {
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 32%);
+    padding: 20px 50px;
+    font-size: medium;
+    font-style: italic;
+}
+
+.footerlogos {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 45px;
+    width: 45px;
+    margin: 20px;
+}
+
+
+/* CSS ABOUT US */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.boton-about-us {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.boton-about-us:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+/* FIN ABOUT US */
+
+
+/* fin estilos footer */
+
+
+/* ESTILOS CONTACT */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* agrego color a cuando el user pase el mouse*/
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.box-contacto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contact-text {
+    color: #45a049;
+}
+
+
+/* FIN CONTACT */
+
+
+/* NOTICIAS */
+
+.NOTICIAS {
+    padding: 15px;
+    /* background-color: white; */
+}
+
+.header-notice {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 18em 18em;
+    grid-gap: 1em;
+    width: 100%;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-template-rows: 18em;
+    grid-gap: 2em;
+}
+
+.header-notice article:first-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.notice-tittle {
+    display: flex;
+    justify-content: center;
+    color: hsl(54, 100%, 51%);
+    ;
+    font-size: 6em;
+    font-style: italic;
+}
+
+.notice-sub {
+    display: flex;
+    justify-content: center;
+    color: hsl(54, 100%, 51%);
+    ;
+    font-size: 1em;
+}
+
+.notice1 {
+    background-image: url(./img/news/harry_kane.jfif);
+    background-size: cover;
+}
+
+.notice2 {
+    background-image: url(./img/news/SAKA-SMITH.jfif);
+    background-size: cover;
+}
+
+.notice3 {
+    background-image: url(./img/news/Tabla.jfif);
+    background-size: cover;
+}
+
+.noticeI1 {
+    background-image: url(./img/news/MESSI.jpg);
+    background-size: cover;
+}
+
+.noticeI2 {
+    background-image: url(./img/news/RONALDO.jpg);
+    background-size: cover;
+}
+
+.noticeI3 {
+    background-image: url(./img/news/JEQUE-CITY.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.noticeI4 {
+    background-image: url(./img/news/NAKUCHY.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.noticeI5 {
+    background-image: url(./img/news/ZLATAN.jpg);
+    background-size: ;
+    background-position: center;
+    background-position: top;
+}
+
+.titular {
+    font-style: italic;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: left;
+}
+
+
+/* MOMENTS CSS */
+
+.MOMENTISTITTLE {
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+}
+
+.linea {
+    background: #550b51;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+#inicio {
+    width: 50px;
+    height: 50px;
+    background: #000;
+}
+
+
+/* #inicio:target {
+    transition: transform 0.5 ease-in-out ;
+    transform: translatex(100%);
+} EN PROCESO*/
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.galeria img {
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+}
+
+galeria>a {}
