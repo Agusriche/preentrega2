@@ -421,7 +421,7 @@ input[type=submit]:hover {
 
 .noticeI5 {
     background-image: url(./img/news/ZLATAN.jpg);
-    background-size: ;
+    background-size: cover;
     background-position: center;
     background-position: top;
 }
@@ -448,7 +448,7 @@ input[type=submit]:hover {
 }
 
 .linea {
-    background: #550b51;
+    background: #04AA6D;
     height: 5px;
     width: 100%;
     display: block;
@@ -468,7 +468,7 @@ input[type=submit]:hover {
 
 .galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     width: 95%;
     margin: auto;
     grid-gap: 10px;
@@ -476,11 +476,22 @@ input[type=submit]:hover {
     padding: 40px 0;
 }
 
+galeria>a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
 .galeria img {
     width: 100%;
     vertical-align: top;
     height: 300px;
     object-fit: cover;
+    transition: transform 0.5s;
 }
 
-galeria>a {}
+.galeria a:hover img {
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
